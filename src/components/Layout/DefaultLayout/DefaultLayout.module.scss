@@ -1,0 +1,11 @@
+@import '../../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+.wrapper {
+    position: relative;
+}
+
+.content {
+    position: relative;
+    top: var(--header-height);
+    padding: 0;
+}

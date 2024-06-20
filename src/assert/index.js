@@ -7,6 +7,7 @@ const images = {
     demo3: require('~/assert/images/food-demo3.jpg'),
     demo4: require('~/assert/images/food-demo4.jpg'),
     avatar: require('~/assert/images/avatar.jpg'),
+    haha: require('~/assert/images/haha.jpg'),
 };
 
 export { images };

@@ -9,7 +9,7 @@ import modals from '~/components/Modals';
 
 const cx = classNames.bind(styles);
 
-function Header({ onClick }) {
+function Header({ onClick, dataList }) {
     const handleModal = (type) => {
         onClick(type);
     };
@@ -119,9 +119,9 @@ function Header({ onClick }) {
             </nav>
             <div className={cx('header-right', 'mx-md-5')}>
                 <div className={cx('cart')}>
-                    <button className={cx('btn-cart')}>
+                    <Link to="/cart" className={cx('btn-cart')} after-content={dataList.length}>
                         <FontAwesomeIcon icon={faCartShopping} />
-                    </button>
+                    </Link>
                 </div>
                 <div className={cx('my_menu-register')}>
                     <div className={cx('nav-item', 'dropdown')}>

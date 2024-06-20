@@ -67,10 +67,12 @@
         border: none;
         background-color: transparent;
         position: relative;
+        padding: 4px 6px;
 
         &::after {
-            content: '1';
+            content: attr(after-content);
             display: block;
+            text-align: center;
             width: 15px;
             height: 15px;
             font-size: 11px;

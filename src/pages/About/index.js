@@ -23,8 +23,8 @@ function About() {
                             <div className={cx('wel_com')}>
                                 <p>WELCOME</p>
                             </div>
-                            <h3>TITLE 1</h3>
-                            <p>description 1</p>
+                            <h3>Tiêu Đề 1</h3>
+                            <p>Miêu Tả 1</p>
                         </div>
                     </div>
                     <div className={cx('carousel-item my_carousel-item ')}>
@@ -33,8 +33,8 @@ function About() {
                             <div className={cx('wel_com')}>
                                 <p>WELCOME</p>
                             </div>
-                            <h3>TITLE 2</h3>
-                            <p>description 2</p>
+                            <h3>Tiêu Đề 2</h3>
+                            <p>Miêu Tả 2</p>
                         </div>
                     </div>
                 </div>
@@ -59,18 +59,18 @@ function About() {
 
             <div className={cx('container-fluid', 'text-white')}>
                 <div className={cx('row', 'about', 'bacground-color')}>
-                    <h5 className={cx('my_primary-color-opacity')}>ABOUT US</h5>
+                    <h5 className={cx('my_primary-color-opacity')}>VỀ CHÚNG TÔI</h5>
                     <div className={cx('col-md-12', 'col-lg-6')}>
-                        <h1 className={cx('mb-4')}>Title</h1>
+                        <h1 className={cx('mb-4')}>Tiêu Đề</h1>
                         <p>
-                            description ... Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptate
+                            Miêu Tả ... Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptate
                             laboriosam accusamus amet at beatae cum eos sit earum similique voluptates, cupiditate
                             saepe, tenetur exercitationem doloremque ex tempora delectus obcaecati.
                         </p>
 
                         <ul>
                             <li>
-                                <h3>Title 1</h3>
+                                <h3>Tiêu Đề 1</h3>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa doloremque iusto
                                     voluptatem id facilis. Quaerat repudiandae autem nulla dolores natus saepe
@@ -78,7 +78,7 @@ function About() {
                                 </p>
                             </li>
                             <li>
-                                <h3>Title 2</h3>
+                                <h3>Tiêu Đề 2</h3>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa doloremque iusto
                                     voluptatem id facilis. Quaerat repudiandae autem nulla dolores natus saepe
@@ -86,7 +86,7 @@ function About() {
                                 </p>
                             </li>
                             <li>
-                                <h3>Title 3</h3>
+                                <h3>Tiêu Đề 3</h3>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa doloremque iusto
                                     voluptatem id facilis. Quaerat repudiandae autem nulla dolores natus saepe
@@ -102,14 +102,14 @@ function About() {
 
                 <div className={cx('row', 'we-have', 'text-center')}>
                     <div className={cx('container', 'list-card')}>
-                        <h5 className={cx('my_primary-color-opacity')}>Achievement</h5>
-                        <h1>Attainment</h1>
+                        <h5 className={cx('my_primary-color-opacity')}>Thành Tích</h5>
+                        <h1>Đạt được</h1>
                         <div className={cx('row', 'achievement')}>
                             <div className={cx('col-md-3')}>
                                 <FontAwesomeIcon icon={faUserCheck} className={cx('icon')} />
                                 <h2 className={cx('my_primary-color-opacity')}>200+</h2>
                                 <div>
-                                    <h3>Premium Clients</h3>
+                                    <h3>Khách Hàng Cao Cấp</h3>
                                 </div>
                             </div>
 
@@ -117,7 +117,7 @@ function About() {
                                 <FontAwesomeIcon icon={faUserTie} className={cx('icon')} />
                                 <h2 className={cx('my_primary-color-opacity')}>200+</h2>
                                 <div>
-                                    <h3>Professional Chefs</h3>
+                                    <h3>Đầu Bếp Chuyên Nghiệp</h3>
                                 </div>
                             </div>
 
@@ -125,7 +125,7 @@ function About() {
                                 <FontAwesomeIcon icon={faTrophy} className={cx('icon')} />
                                 <h2 className={cx('my_primary-color-opacity')}>200+</h2>
                                 <div>
-                                    <h3>Winning Awards</h3>
+                                    <h3>Giành Giải Thưởng</h3>
                                 </div>
                             </div>
 
@@ -133,7 +133,7 @@ function About() {
                                 <FontAwesomeIcon icon={faFaceSmile} className={cx('icon')} />
                                 <h2 className={cx('my_primary-color-opacity')}>200+</h2>
                                 <div>
-                                    <h3>5 Star Reviews</h3>
+                                    <h3>Đánh Giá 5 Sao</h3>
                                 </div>
                             </div>
                         </div>
@@ -197,8 +197,8 @@ function About() {
                         </div>
 
                         <div className={cx('row', 'feetback')}>
-                            <h5 className={cx('my_primary-color-opacity')}>Feetback</h5>
-                            <h1>Feetback</h1>
+                            <h5 className={cx('my_primary-color-opacity')}>Phản Hồi</h5>
+                            <h1>Phản Hồi</h1>
                             <div className={cx('col-md-3')}>
                                 <div className={cx('item')}>
                                     <img src={images.avatar} alt="" />
@@ -210,7 +210,7 @@ function About() {
                                             <FontAwesomeIcon icon={faStar} className={cx('my_primary-color')} />
                                             <FontAwesomeIcon icon={faStar} className={cx('my_primary-color')} />
                                         </div>
-                                        <h3>Name 1</h3>
+                                        <h3>Tên 1</h3>
                                         <p>
                                             Comment Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
                                             laborum doloremque vel veniam harum facilis. Tempore, excepturi. Voluptatem,
@@ -231,7 +231,7 @@ function About() {
                                             <FontAwesomeIcon icon={faStar} className={cx('my_primary-color')} />
                                             <FontAwesomeIcon icon={faStar} className={cx('my_primary-color')} />
                                         </div>
-                                        <h3>Name 2</h3>
+                                        <h3>Tên 2</h3>
                                         <p>
                                             Comment Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
                                             laborum doloremque vel veniam harum facilis. Tempore, excepturi. Voluptatem,
@@ -252,7 +252,7 @@ function About() {
                                             <FontAwesomeIcon icon={faStar} className={cx('my_primary-color')} />
                                             <FontAwesomeIcon icon={faStar} className={cx('my_primary-color')} />
                                         </div>
-                                        <h3>Name 3</h3>
+                                        <h3>Tên 3</h3>
                                         <p>
                                             Comment Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
                                             laborum doloremque vel veniam harum facilis. Tempore, excepturi. Voluptatem,
@@ -273,7 +273,7 @@ function About() {
                                             <FontAwesomeIcon icon={faStar} className={cx('my_primary-color')} />
                                             <FontAwesomeIcon icon={faStar} />
                                         </div>
-                                        <h3>Name 4</h3>
+                                        <h3>Tên 4</h3>
                                         <p>
                                             Comment Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
                                             laborum doloremque vel veniam harum facilis. Tempore, excepturi. Voluptatem,
@@ -300,14 +300,14 @@ function About() {
                 <div className={cx('row', 'book')}>
                     <div className={cx('col-md-8')}>
                         <h5 className={cx('my_primary-color-opacity')}>
-                            Fueling Life's Journey, Each Bite a Culinary Adventure!
+                            Tiếp sức cho hành trình cuộc sống, mỗi miếng ăn là một cuộc phiêu lưu ẩm thực!
                         </h5>
-                        <h1>Booking Table For Your & Your Family</h1>
+                        <h1>Hãy Đặt Bàn Cho Bạn & Gia Đình</h1>
                     </div>
                     <div className={cx('col-md-4', 'd-flex', 'align-items-md-center', 'justify-content-md-end')}>
                         <form>
                             <button className={cx('btn', 'my_btn', 'mt-3')} type="button">
-                                Book Now
+                                Đặt Ngay
                             </button>
                         </form>
                     </div>

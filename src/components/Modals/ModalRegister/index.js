@@ -26,9 +26,9 @@ function ModalRegister({ onClick }) {
                             handleModal();
                         }}
                     >
-                        Login
+                        Đăng Nhập
                     </p>
-                    <p className={cx('selected')}>Register</p>
+                    <p className={cx('selected')}>Đăng Ký</p>
                 </div>
             </div>
             <div className={cx('modal-body')}>

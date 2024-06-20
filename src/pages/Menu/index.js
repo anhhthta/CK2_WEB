@@ -23,20 +23,20 @@ function Menu({ onClick }) {
                         <div className={cx('my_img-slide', 'my_img-1')}></div>
                         <div className={cx('carousel-caption', 'my_carousel-caption')}>
                             <div className={cx('wel_com')}>
-                                <p>WELCOME</p>
+                                <p>Chào Mừng</p>
                             </div>
-                            <h3>TITLE 1</h3>
-                            <p>description 1</p>
+                            <h3>Tiêu Đề 1</h3>
+                            <p>Miêu tả 1</p>
                         </div>
                     </div>
                     <div className={cx('carousel-item my_carousel-item ')}>
                         <div className={cx('my_img-slide', 'my_img-2')}></div>
                         <div className={cx('carousel-caption', 'my_carousel-caption')}>
                             <div className={cx('wel_com')}>
-                                <p>WELCOME</p>
+                                <p>Chào Mừng</p>
                             </div>
-                            <h3>TITLE 2</h3>
-                            <p>description 2</p>
+                            <h3>Tiêu Đề 2</h3>
+                            <p>Miêu tả 2</p>
                         </div>
                     </div>
                 </div>
@@ -62,10 +62,10 @@ function Menu({ onClick }) {
             <div className={cx('container-fluid', 'text-white')}>
                 <div className={cx('row', 'menu')}>
                     <div className={cx('container', 'list-card', 'bacground-color')}>
-                        <h5 className={cx('text-center', 'my_primary-color')}>Best of food</h5>
+                        <h5 className={cx('text-center', 'my_primary-color')}>Món ăn ngon nhất</h5>
                         <h1 className={cx('text-center')}>Menu</h1>
                         <div className={cx('row', 'list_menu', 'food')}>
-                            <h4 className={cx('col-sm-12', 'my_primary-color')}>Food Menu</h4>
+                            <h4 className={cx('col-sm-12', 'my_primary-color')}>Đồ Ăn</h4>
                             {foods.map((food, key) => {
                                 return (
                                     <div
@@ -81,7 +81,7 @@ function Menu({ onClick }) {
                                                 <h5>{food.name}</h5>
                                                 <p>{food.des}</p>
                                                 <p className={cx('my_primary-color')}>
-                                                    .............. {food.price} (Price)
+                                                    .............. {food.price}$ (Giá)
                                                 </p>
                                             </div>
                                         </div>
@@ -90,7 +90,7 @@ function Menu({ onClick }) {
                             })}
                         </div>
                         <div className={cx('row', 'list_menu', 'water')}>
-                            <h4 className={cx('col-sm-12', 'my_primary-color')}>Water Menu</h4>
+                            <h4 className={cx('col-sm-12', 'my_primary-color')}>Nước</h4>
 
                             {drinks.map((drink, key) => {
                                 return (
@@ -101,7 +101,7 @@ function Menu({ onClick }) {
                                                 <h5>{drink.name}</h5>
                                                 <p>{drink.des}</p>
                                                 <p className={cx('my_primary-color')}>
-                                                    .............. {drink.price} (Price)
+                                                    .............. {drink.price}$ (Giá)
                                                 </p>
                                             </div>
                                         </div>
@@ -115,14 +115,14 @@ function Menu({ onClick }) {
                 <div className={cx('row', 'book')}>
                     <div className={cx('col-md-8')}>
                         <h5 className={cx('my_primary-color-opacity')}>
-                            Fueling Life's Journey, Each Bite a Culinary Adventure!
+                            Tiếp sức cho hành trình cuộc sống, mỗi miếng ăn là một cuộc phiêu lưu ẩm thực!
                         </h5>
-                        <h1>Booking Table For Your & Your Family</h1>
+                        <h1>Hãy Đặt Bàn Cho Bạn & Gia Đình</h1>
                     </div>
                     <div className={cx('col-md-4', 'd-flex', 'align-items-md-center', 'justify-content-md-end')}>
                         <form>
                             <button className={cx('btn', 'my_btn', 'mt-3')} type="button">
-                                Book Now
+                                Đặt Ngay
                             </button>
                         </form>
                     </div>

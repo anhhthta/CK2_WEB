@@ -29,30 +29,30 @@ function Home() {
                         <div className={cx('my_img-slide', 'my_img-1')}></div>
                         <div className={cx('carousel-caption', 'my_carousel-caption')}>
                             <div className={cx('wel_com')}>
-                                <p>WELCOME</p>
+                                <p>Chào Mừng</p>
                             </div>
-                            <h3>TITLE 1</h3>
-                            <p>description 1</p>
+                            <h3>Tiêu Đề 1</h3>
+                            <p>Miêu tả 1</p>
                         </div>
                     </div>
                     <div className={cx('carousel-item my_carousel-item ')}>
                         <div className={cx('my_img-slide', 'my_img-2')}></div>
                         <div className={cx('carousel-caption', 'my_carousel-caption')}>
                             <div className={cx('wel_com')}>
-                                <p>WELCOME</p>
+                                <p>Chào Mừng</p>
                             </div>
-                            <h3>TITLE 2</h3>
-                            <p>description 2</p>
+                            <h3>Tiêu Đề 2</h3>
+                            <p>Miêu tả 2</p>
                         </div>
                     </div>
                     <div className={cx('carousel-item my_carousel-item ')}>
                         <div className={cx('my_img-slide', 'my_img-3')}></div>
                         <div className={cx('carousel-caption', 'my_carousel-caption')}>
                             <div className={cx('wel_com')}>
-                                <p>WELCOME</p>
+                                <p>Chào Mừng</p>
                             </div>
-                            <h3>TITLE 3</h3>
-                            <p>description 3</p>
+                            <h3>Tiêu Đề 3</h3>
+                            <p>Miêu tả 3</p>
                         </div>
                     </div>
                 </div>
@@ -78,7 +78,7 @@ function Home() {
             <div className={cx('container-fluid', 'text-white')}>
                 <div className={cx('row', 'about')}>
                     <h5 className={cx('my_primary-color-opacity')} data-aos="fade-up">
-                        ABOUT US
+                        VỀ CHÚNG TÔI
                     </h5>
                     <div className={cx('col-sm-12', 'col-md-6')} data-aos="fade-up">
                         <h1 className={cx('mb-4')}>Title</h1>
@@ -97,7 +97,7 @@ function Home() {
                     <div className={cx('container', 'list-card')}>
                         <div data-aos="fade-up">
                             <h5 className={cx('my_primary-color-opacity')}>Why US</h5>
-                            <h1>Why choose us</h1>
+                            <h1>Tại Sao Nên Chọn Chúng Tôi</h1>
                         </div>
                         <div className={cx('row')}>
                             <div className={cx('col-sm-12', 'col-md-12', 'col-lg-4')} data-aos="fade-up">
@@ -136,8 +136,8 @@ function Home() {
 
                 <div className={cx('row', 'menu')}>
                     <div data-aos="fade-up">
-                        <h5 className={cx('text-center', 'my_primary-color')}>Best of food</h5>
-                        <h1 className={cx('text-center')}>Popular Menu</h1>
+                        <h5 className={cx('text-center', 'my_primary-color')}>Món ăn ngon nhất</h5>
+                        <h1 className={cx('text-center')}>Thực Đơn Phổ Biến</h1>
                     </div>
                     <div className={cx('container', 'list-card')}>
                         <div className={cx('row')}>
@@ -145,9 +145,9 @@ function Home() {
                                 <div className={cx('item')}>
                                     <img src={images.demo} alt="" />
                                     <div>
-                                        <h2>Name</h2>
-                                        <p>Description</p>
-                                        <p className={cx('my_primary-color')}>................. (Price)</p>
+                                        <h2>Tên</h2>
+                                        <p>Miêu Tả</p>
+                                        <p className={cx('my_primary-color')}>................. (Giá)</p>
                                     </div>
                                 </div>
                             </div>
@@ -155,9 +155,9 @@ function Home() {
                                 <div className={cx('item')}>
                                     <img src={images.demo2} alt="" />
                                     <div>
-                                        <h2>Name</h2>
-                                        <p>Description</p>
-                                        <p className={cx('my_primary-color')}>................. (Price)</p>
+                                        <h2>Tên</h2>
+                                        <p>Miêu Tả</p>
+                                        <p className={cx('my_primary-color')}>................. (Giá)</p>
                                     </div>
                                 </div>
                             </div>
@@ -165,9 +165,9 @@ function Home() {
                                 <div className={cx('item')}>
                                     <img src={images.demo3} alt="" />
                                     <div>
-                                        <h2>Name</h2>
-                                        <p>Description</p>
-                                        <p className={cx('my_primary-color')}>................. (Price)</p>
+                                        <h2>Tên</h2>
+                                        <p>Miêu Tả</p>
+                                        <p className={cx('my_primary-color')}>................. (Giá)</p>
                                     </div>
                                 </div>
                             </div>
@@ -175,9 +175,9 @@ function Home() {
                                 <div className={cx('item')}>
                                     <img src={images.demo4} alt="" />
                                     <div>
-                                        <h2>Name</h2>
-                                        <p>Description</p>
-                                        <p className={cx('my_primary-color')}>................. (Price)</p>
+                                        <h2>Tên</h2>
+                                        <p>Miêu Tả</p>
+                                        <p className={cx('my_primary-color')}>................. (Giá)</p>
                                     </div>
                                 </div>
                             </div>
@@ -185,9 +185,9 @@ function Home() {
                                 <div className={cx('item')}>
                                     <img src={images.demo} alt="" />
                                     <div>
-                                        <h2>Name</h2>
-                                        <p>Description</p>
-                                        <p className={cx('my_primary-color')}>................. (Price)</p>
+                                        <h2>Tên</h2>
+                                        <p>Miêu Tả</p>
+                                        <p className={cx('my_primary-color')}>................. (Giá)</p>
                                     </div>
                                 </div>
                             </div>
@@ -195,9 +195,9 @@ function Home() {
                                 <div className={cx('item')}>
                                     <img src={images.demo2} alt="" />
                                     <div>
-                                        <h2>Name</h2>
-                                        <p>Description</p>
-                                        <p className={cx('my_primary-color')}>................. (Price)</p>
+                                        <h2>Tên</h2>
+                                        <p>Miêu Tả</p>
+                                        <p className={cx('my_primary-color')}>................. (Giá)</p>
                                     </div>
                                 </div>
                             </div>
@@ -205,9 +205,9 @@ function Home() {
                                 <div className={cx('item')}>
                                     <img src={images.demo3} alt="" />
                                     <div>
-                                        <h2>Name</h2>
-                                        <p>Description</p>
-                                        <p className={cx('my_primary-color')}>................. (Price)</p>
+                                        <h2>Tên</h2>
+                                        <p>Miêu Tả</p>
+                                        <p className={cx('my_primary-color')}>................. (Giá)</p>
                                     </div>
                                 </div>
                             </div>
@@ -215,9 +215,9 @@ function Home() {
                                 <div className={cx('item')}>
                                     <img src={images.demo4} alt="" />
                                     <div>
-                                        <h2>Name</h2>
-                                        <p>Description</p>
-                                        <p className={cx('my_primary-color')}>................. (Price)</p>
+                                        <h2>Tên</h2>
+                                        <p>Miêu Tả</p>
+                                        <p className={cx('my_primary-color')}>................. (Giá)</p>
                                     </div>
                                 </div>
                             </div>
@@ -227,8 +227,8 @@ function Home() {
 
                 <div className={cx('row', 'feedback', 'text-center')}>
                     <div data-aos="fade-up">
-                        <h5 className={cx('my_primary-color-opacity')}>Customers feedback</h5>
-                        <h1>Popular Comments</h1>
+                        <h5 className={cx('my_primary-color-opacity')}>Phản Hồi Từ Khách Hàng</h5>
+                        <h1>Bình Luận Phổ Biến</h1>
                     </div>
                     <div className={cx('container', 'list-card')}>
                         <div className={cx('row')}>
@@ -322,21 +322,21 @@ function Home() {
                             <div className={cx('col-md-4')} data-aos="fade-up" data-aos-duration="1000">
                                 <h2 className={cx('my_primary-color-opacity')}>200+</h2>
                                 <div>
-                                    <h3>Premium Clients</h3>
+                                    <h3>Khách Hàng Cao Cấp</h3>
                                 </div>
                             </div>
 
                             <div className={cx('col-md-4')} data-aos="fade-up" data-aos-duration="2000">
                                 <h2 className={cx('my_primary-color-opacity')}>200+</h2>
                                 <div>
-                                    <h3>Expert Members</h3>
+                                    <h3>Thành Viên Chuyên Môn</h3>
                                 </div>
                             </div>
 
                             <div className={cx('col-md-4')} data-aos="fade-up" data-aos-duration="3000">
                                 <h2 className={cx('my_primary-color-opacity')}>200+</h2>
                                 <div>
-                                    <h3>Winning Awards</h3>
+                                    <h3>Giành giải thưởng</h3>
                                 </div>
                             </div>
                         </div>
@@ -346,14 +346,14 @@ function Home() {
                 <div className={cx('row', 'book')}>
                     <div className={cx('col-md-8')}>
                         <h5 className={cx('my_primary-color-opacity')}>
-                            Fueling Life's Journey, Each Bite a Culinary Adventure!
+                            Tiếp sức cho hành trình cuộc sống, mỗi miếng ăn là một cuộc phiêu lưu ẩm thực!
                         </h5>
-                        <h1>Booking Table For Your & Your Family</h1>
+                        <h1>Hãy Đặt Bàn Cho Bạn & Gia Đình</h1>
                     </div>
                     <div className={cx('col-md-4', 'd-flex', 'align-items-md-center', 'justify-content-md-end')}>
                         <form>
                             <button className={cx('btn', 'my_btn', 'mt-3')} type="button">
-                                Book Now
+                                Đặt Ngay
                             </button>
                         </form>
                     </div>

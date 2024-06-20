@@ -21,13 +21,13 @@ function ModalLogin({ onClick }) {
                     </button>
                 </div>
                 <div className={cx('header-title')}>
-                    <p className={cx('selected')}>Login</p>
+                    <p className={cx('selected')}>Đăng Nhập</p>
                     <p
                         onClick={() => {
                             handleModal();
                         }}
                     >
-                        Register
+                        Đăng Ký
                     </p>
                 </div>
             </div>

@@ -118,4 +118,7 @@ const drinks = [
     },
 ];
 
-export { foods, drinks };
+const users = [];
+const user = {};
+
+export { foods, drinks, users, user };

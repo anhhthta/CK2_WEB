@@ -3,6 +3,7 @@ import classNames from 'classnames/bind';
 import styles from './Menu.module.scss';
 import { drinks, foods } from '~/assert/demo';
 import modals from '~/components/Modals';
+import { useEffect, useState } from 'react';
 
 const cx = classNames.bind(styles);
 
@@ -10,6 +11,37 @@ function Menu({ onClick }) {
     const handleModal = (food, data) => {
         onClick(food, data);
     };
+
+    const [sFoods, setSFoods] = useState(foods);
+    const [sDrinks, setSDrinks] = useState(drinks);
+
+    const [search, setSearch] = useState('');
+
+    useEffect(() => {
+        let mounted = false;
+
+        const cleanup = () => {
+            mounted = true;
+        };
+
+        if (search === '') {
+            setSDrinks(drinks);
+            setSFoods(foods);
+        } else {
+            if (mounted) return;
+            setSDrinks(() => {
+                return drinks.filter((d) => d.name.toLowerCase().includes(search.toLowerCase()));
+            });
+            setSFoods(() => {
+                return foods.filter((f) => f.name.toLowerCase().includes(search.toLowerCase()));
+            });
+        }
+
+        console.log(sFoods);
+
+        return cleanup;
+    }, [search]);
+
     return (
         <>
             <div id="demo" className={cx('carousel slide ')} data-bs-ride="carousel">
@@ -64,9 +96,18 @@ function Menu({ onClick }) {
                     <div className={cx('container', 'list-card', 'bacground-color')}>
                         <h5 className={cx('text-center', 'my_primary-color')}>Món ăn ngon nhất</h5>
                         <h1 className={cx('text-center')}>Menu</h1>
+                        <div>
+                            <input
+                                type="text"
+                                placeholder="Search..."
+                                onChange={(e) => setSearch(e.target.value)}
+                                className={cx('text-search')}
+                            />
+                        </div>
                         <div className={cx('row', 'list_menu', 'food')}>
                             <h4 className={cx('col-sm-12', 'my_primary-color')}>Đồ Ăn</h4>
-                            {foods.map((food, key) => {
+
+                            {sFoods.map((food, key) => {
                                 return (
                                     <div
                                         onClick={() => handleModal(modals.product, food)}
@@ -92,9 +133,15 @@ function Menu({ onClick }) {
                         <div className={cx('row', 'list_menu', 'water')}>
                             <h4 className={cx('col-sm-12', 'my_primary-color')}>Nước</h4>
 
-                            {drinks.map((drink, key) => {
+                            {sDrinks.map((drink, key) => {
                                 return (
-                                    <div key={key} className={cx('col-md-6', 'col-lg-6', 'col-xl-4')}>
+                                    <div
+                                        onClick={() => handleModal(modals.product, drink)}
+                                        key={key}
+                                        className={cx('col-md-6', 'col-lg-6', 'col-xl-4')}
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#myModal"
+                                    >
                                         <div className={cx('item')}>
                                             <img src={drink.image} alt="" />
                                             <div>

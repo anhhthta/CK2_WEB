@@ -6,6 +6,8 @@ import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import { images } from '~/assert';
 import modals from '~/components/Modals';
+import { useEffect, useRef, useState } from 'react';
+import { user } from '~/assert/demo';
 
 const cx = classNames.bind(styles);
 
@@ -13,6 +15,39 @@ function Header({ onClick, dataList }) {
     const handleModal = (type) => {
         onClick(type);
     };
+
+    const dx = () => {
+        user.name = '';
+        user.email = '';
+        user.pass = '';
+    };
+
+    const refA = useRef();
+    const refA1 = useRef();
+    const refB = useRef();
+    const refB1 = useRef();
+    const refB2 = useRef();
+    const refi = useRef();
+
+    useEffect(() => {
+        setInterval(() => {
+            if (user.name || user.name !== '') {
+                refA.current.classList.add(styles.hidden);
+                refA1.current.classList.add(styles.hidden);
+                refB.current.classList.remove(styles.hidden);
+                refB1.current.classList.remove(styles.hidden);
+                refB2.current.classList.remove(styles.hidden);
+                refi.current.classList.add(styles.hidden);
+            } else {
+                refi.current.classList.remove(styles.hidden);
+                refA.current.classList.remove(styles.hidden);
+                refA1.current.classList.remove(styles.hidden);
+                refB.current.classList.add(styles.hidden);
+                refB1.current.classList.add(styles.hidden);
+                refB2.current.classList.add(styles.hidden);
+            }
+        }, 5000);
+    });
 
     return (
         <header className={cx('container-fluid', 'header', 'bacground-color')}>
@@ -131,12 +166,14 @@ function Header({ onClick, dataList }) {
                             role="button"
                             data-bs-toggle="dropdown"
                         >
-                            <FontAwesomeIcon className={cx('menu-icon')} icon={faCaretDown} />
+                            <i ref={refi}>
+                                <FontAwesomeIcon className={cx('menu-icon')} icon={faCaretDown} />
+                            </i>
                             <FontAwesomeIcon className={cx('menu-icon', 'icon-user')} icon={faCircleUser} />
                         </div>
 
                         <ul className={cx('dropdown-menu ', 'my_dropdown-menu')}>
-                            <li>
+                            <li ref={refA}>
                                 <button
                                     className={cx('dropdown-item')}
                                     data-bs-toggle="modal"
@@ -146,7 +183,7 @@ function Header({ onClick, dataList }) {
                                     Đăng Nhập
                                 </button>
                             </li>
-                            <li>
+                            <li ref={refA1}>
                                 <button
                                     className={cx('dropdown-item')}
                                     data-bs-toggle="modal"
@@ -154,6 +191,17 @@ function Header({ onClick, dataList }) {
                                     onClick={() => handleModal(modals.register)}
                                 >
                                     Đăng Ký
+                                </button>
+                            </li>
+                            <li ref={refB}>
+                                <button className={cx('dropdown-item', 'text-center')}>{user.name}</button>
+                            </li>
+                            <li ref={refB1}>
+                                <button className={cx('dropdown-item', 'text-center')}>{user.email}</button>
+                            </li>
+                            <li ref={refB2}>
+                                <button onClick={dx} className={cx('dropdown-item', 'text-center')}>
+                                    Đăng Xuất
                                 </button>
                             </li>
                         </ul>

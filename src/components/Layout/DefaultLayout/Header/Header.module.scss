@@ -110,6 +110,10 @@
     }
 }
 
+.hidden {
+    display: none !important;
+}
+
 @media (max-width: 575px) {
     .my_navbar-collapse {
         background-color: var(--background-color-o);
